@@ -7,7 +7,7 @@ Things move quickly and change often. This means that at times requests and requ
 We as an engineering team also strive to use the best technologies for the problem at hand. This means that sometimes you will need to learn a new framework, a new architecture pattern, or even a new language. When this happens use your fellow engineers and the Engineering Leadership team to their fullest. Questions are encouraged and collaboration is valued.
 
 ## Pair Programming
-The engineering team will program in pairs as desired. Pair programming increases quality and reduce bugs, as well as to naturally spread knowledge of the systems and tools through collaboration.
+The engineering team will program in pairs as desired. Pair programming increases quality and reduces bugs, as well as naturally spreads knowledge of systems and tools through collaboration.
 
 Any time an engineer solos on a task they must have their code reviewed via a Pull Request by at least one other engineer. Pairs can also, but are not requried to, ask for Code Review. It is a great tool if they want additional feedback before merging their work (this can be especially helpful on complex tasks).
 
@@ -20,7 +20,7 @@ A useful pattern for Service classes in particular is to have a main method that
 
 No http or database calls should ever actually run in unit tests. For code that uses http or database requests (perhaps for API calls), if at all possible the request module/library should be stubbed. If stubbing is not possible for some reason, then an http request mocking library (like nock in javascript apps) should be used.
 
-Functaional tests (aka End to End/Integration tests) are also highly encouraged. The added cost of maintaining them is recognized as being worth the effort. Funcational tests do not need to be run on every save, but should definitely be run before any merge. In general, the entire bridge should be tested from time to time and not just each bolt.
+Functional tests (aka End to End/Integration tests) are also highly encouraged. The added cost of maintaining them is recognized as being worth the effort. Funcational tests do not need to be run on every save, but should definitely be run before any merge. In general, the entire bridge should be tested from time to time and not just each bolt.
 
 ## Continuos Integration
 All applications are tested automaticaly using Circle CI, so developers don't have to remember this task on their own. For some producs, Circle CI will also handle continuous deployment activities. Once a pull request is complete and pushed to the `master` branch, Circle CI will test the code within a couple of minutes (and then proceed to deploy if appropriate). It is also feasible to configure Circle CI such that any commit to a `release/*` branch gets deployed to a separate staging environment. Please subscribe to your projects on the [Circle CI](https://circleci.com/) page to receive notifications about failing builds.
@@ -50,4 +50,4 @@ When a story requires additional action, it is also important to update the stor
 The recommended language for all new systems is [Golang](https://golang.org/). Alternatives can be considered on a case by case basis, but the assumption will be that systems are implemented using Go. See the [Core Platform - Choosing a Stack](https://docs.google.com/document/d/1C1bhLA8yYqx34RpyzoSfvC6d-aQzk29i0hwftBqMlNs/edit?usp=sharing) document for more details about the process that was involved with selecting Go.
 
 ## Version Management
-Specific application of version numbers will vary by product (for instance, a product that is continuously deployed will likely have relative versioning applied, where as a manually deployed application may have strict manual versioning). In general, versioning shoudl follow the [SemVer](https://semver.org/) pattern. This allows for easy recognition of the scale of changes in the most recent release (whether it included breaking changes, new features, or bug fixes). Product Management will work in coordination with the Engineering Team to tag tickets with an appropriate version in order to ease communication of new releases.
+Specific application of version numbers will vary by product (for instance, a product that is continuously deployed will likely have relative versioning applied, where as a manually deployed application may have strict manual versioning). In general, versioning should follow the [SemVer](https://semver.org/) pattern. This allows for easy recognition of the scale of changes in the most recent release (whether it included breaking changes, new features, or bug fixes). Product Management will work in coordination with the Engineering Team to tag tickets with an appropriate version in order to ease communication of new releases.
