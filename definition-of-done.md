@@ -17,4 +17,4 @@ A development ticket can be considered done if all of the following questions ca
 
 Note that if a development ticket ends up being rejected, then the ticket was not actually done. If this happens, attempt to identify what part of the DoD was incorrectly answered “Yes”.
 
-Assuming all qustions are answerd with "Yes" then the development ticket should proceed to "In Review". Be sure to shepheard your "In Review" tickets through to completion.
+Assuming all qustions are answered with "Yes" then the development ticket should proceed to "In Review". Be sure to shepherd your in review tickets through to completion.
