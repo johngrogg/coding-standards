@@ -11,3 +11,6 @@ The purpose of this repository and documents are to establish a baseline set of 
 - [Git Guidelines](git-guidelines.md)
 - [Release Process](release-process.md)
 - [References](references.md)
+
+## History
+This set of coding guidelines was originally created by John Grogg while at FreshRealm with significant contributions from [Sakwa Alvitre](https://github.com/sakwaa) and [Ondrej Nebesky](https://github.com/onebesky). It was later generalized to be more broadly useful. Feel free to fork and use as desired.
